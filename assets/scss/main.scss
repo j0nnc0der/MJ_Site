@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+@import "reset";
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: #000000;
+    margin: 0;
+    height: 100%;
+}
+
+header {
+    /*position: absolute; */
+    padding: 15px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    .logo {
+        width: 61.8px;
+        img {
+            width: 100%;
+        }
+    }
+    nav {
+        align-self: center;
+        a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 300;
+            padding: 0 10px;
+        }
+    }
+}
+
+#top-section {
+    position: relative;
+    .bluredbg {
+        background-image: url("/images/dangerous-world-tour.jpg");
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        filter: blur(0.1px);
+        position: absolute;
+        z-index: 1;
+        filter: contrast(150%);
+    }
+    .floating-img {
+        positon: absolute;
+        z-index: 2;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .MJ-img {
+        width: 61%;
+        img {
+            width: 100%;
+            filter: contrast(150%);
+        }
+    }
+}
+
+.container {
+    max-width: 1400px;
+}
+
+#bio {
+    background: black;
+    position: relative;
+    z-index: 3;
+    padding: 100px 0;
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+}
+
+p {
+    color: white;
+    line-height: 1.8;
+    font-size: 0.9rem;
+    width: 50%;
+    padding: 0 50px;
+}
+
+.logo-centered {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+}
+
+#media {
+    padding: 100px 0;
+    background-image: url("/images/roses.jpeg");
+    background-size: cover;
+    .title {
+        /*  background: black; */
+        font-size: 1.1rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        color: white;
+        /*   margin: 0 0 80px; */
+    }
+    .videos {
+        padding: 80px 50px 0;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 50px;
+    }
+    .video {
+        border-radius: 4px;
+        overflow: hidden;
+        height: 300px;
+        -webkit-box-shadow: 0px 13px 24px -8px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 13px 24px -8px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 13px 24px -8px rgba(0, 0, 0, 0.75);
+        iframe {
+            height: 100%;
+        }
+    }
+}
+
+#music {
+    padding: 80px 0;
+    position: relative;
+    .bluredbg {
+        background-color: white;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        filter: blur(0.1px);
+        position: absolute;
+        z-index: 1;
+    }
+    .container {
+        display: flex;
+        padding: 0 50px;
+        position: relative;
+        z-index: 3;
+        color: rgb(0, 0, 0);
+    }
+    .info {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .title {
+            font-size: 3rem;
+            font-weight: 718;
+            text-align: center;
+            margin: 61.8px 0 33px 0;
+        }
+        .sub-title {
+            font-size: 2rem;
+            font-weight: 500;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 100px;
+        }
+        .singles {
+            width: 400px;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            margin-bottom: 80px;
+            li {
+                /* font-size: 1.5rem;*/
+                font-weight: 300;
+                text-align: center;
+                margin-bottom: 20px;
+                list-style-type: none;
+            }
+        }
+        .logos {
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            grid-gap: 61.8px;
+            list-style-type: none;
+        }
+    }
+    .album-cover {
+        width: 50%;
+        dsiplay: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -250px;
+        /* Half the height */
+        margin-left: -250px;
+        /* Half the width */
+        img {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            /* Half the width */
+        }
+        img.resize {
+            width: 540px;
+            /* you can use % */
+            height: auto;
+        }
+    }
+}
+
+#tour {
+    background: black;
+    position: relative;
+    z-index: 4;
+    .top-img {
+        background-image: url("/images/mjgroup.jpg");
+        background-repeat: repeat;
+        backgrouns-size: cover;
+        background-position: center center;
+        max-width: 100%;
+        filter: saturate(0%) contrast(150%);
+        height: 300px;
+    }
+    .releasedates {
+        background: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .tite {
+            color: #39a751;
+            text-transform: uppercase;
+            font-size: 1.8rem;
+            text-align: center;
+            margin: 50px 0;
+        }
+        .dates {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 0px 61.8px;
+            // max-width: 800px;
+            li {
+                list-style-type: none;
+                color: white;
+                font-size: 1.3rem;
+                span {
+                    padding: 0 11px;
+                }
+                .city {
+                    font-weight: 800;
+                }
+                .location {
+                    font-size: 1rem;
+                    font-weight: 300;
+                }
+                .date {
+                    font-weight: 400;
+                    color: #8b0000;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background: #1b1b1b;
+    position: relative;
+    z-index: 4;
+    left: 0;
+    bottom: -33px;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
